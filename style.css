@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap");
+
+:root {
+  --bgGrad: rgba(119, 119, 119, 0.26);
+  --bgGrad2: rgba(119, 119, 119, 0.233);
+  --bgGrad3: rgba(119, 119, 119, 0.308);
+}
+
+body {
+  background-color: #b9babb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.home,
+.galleryImg,
+.whyVen,
+.final {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(var(--bgGrad), var(--bgGrad)),
+    url(Imgs/Sfondi/bgImg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  width: 50%;
+  height: 50%;
+
+  position: absolute;
+  transform: translateX(50%);
+  transform: translateY(50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1,
+.hero p {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero h1 {
+  background-image: linear-gradient(to right, #c9470a, #dd9b49);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 25px;
+  font-weight: bold;
+
+  background-image: linear-gradient(to left, #ffe603, #ffaf01);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.whyVen,
+.galleryImg {
+  background-image: linear-gradient(var(--bgGrad2), var(--bgGrad2)),
+    url(Imgs/Sfondi/bgImg2.jpg);
+  position: relative;
+}
+
+.heroDiv {
+  display: flex;
+  justify-items: flex-end;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 1%;
+}
+
+.heroText {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.heroDiv h1,
+.galleryImg h1,
+.final h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #ffd966;
+}
+
+.final h1 {
+  text-align: left;
+  align-self: flex-start;
+}
+
+.heroText p,
+.finalText p {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #00000038;
+  border: 1px solid #00000059;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.finalText p {
+  background-color: #00000085;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #ffd966;
+  color: #000000;
+  text-transform: uppercase;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 12px;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #ffd966;
+}
+
+.galleryImg {
+  background-image: linear-gradient(var(--bgGrad2), var(--bgGrad2)),
+    url(Imgs/Sfondi/bgImg3.jpg);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.galleryImg img {
+  width: 25%;
+  border: 2px solid #c8b000;
+  border-radius: 20px;
+}
+
+.ImgsGall {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.galleryImg h1 {
+  font-size: 90px;
+}
+
+.final {
+  background-image: linear-gradient(var(--bgGrad3), var(--bgGrad3)),
+    url(Imgs/Sfondi/bgImg4.jpg);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.finalText {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2em;
+}
+
+.workIn {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  * {
+    display: none;
+  }
+}
